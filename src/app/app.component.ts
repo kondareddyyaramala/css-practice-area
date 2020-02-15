@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild, ElementRef} from '@angular/core';
 
 @Component({
   selector: 'my-app',
@@ -9,5 +9,11 @@ export class AppComponent  {
   name = 'Angular';
   isEven = true;
 
+  @ViewChild('article', {static: true}) article: ElementRef<HTMLElement>;
+
+  onClick(){
+    this.isEven = !this.isEven;
+     console.log(this.article.nativeElement.dataset);
+  }
   
 }

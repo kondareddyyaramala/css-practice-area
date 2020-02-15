@@ -13,6 +13,6 @@
 
 <h5>Demonstrating the practical use of data attributes</h5>
 <div>
-	<article [attr.data-even]="isEven"></article>
-  <button (click)="isEven = !isEven">Click to change color</button>
+	<article #article [attr.data-even]="isEven"></article>
+  <button (click)="onClick()">Click to change color</button>
 </div>
