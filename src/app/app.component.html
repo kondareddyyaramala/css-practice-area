@@ -10,3 +10,9 @@
   <div>Hello this is two</div>
   <div>Hello this is three</div>
 </div>
+
+<h5>Demonstrating the practical use of data attributes</h5>
+<div>
+	<article [attr.data-even]="isEven"></article>
+  <button (click)="isEven = !isEven">Click to change color</button>
+</div>

@@ -3,6 +3,12 @@ article {
   padding: 10px;
   margin: auto;
   width: 40px;
+  &[data-even=true]{
+    background-color: red;
+  }
+  &[data-even=false]{
+    background-color: green;
+  }
 }
 #grid {
   display: grid;
@@ -22,3 +28,5 @@ article {
     // margin: auto;
   }
 }
+
+
