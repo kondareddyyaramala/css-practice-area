@@ -8,12 +8,17 @@ import { Component, ViewChild, ElementRef} from '@angular/core';
 export class AppComponent  {
   name = 'Angular';
   isEven = true;
+  inputValue: string = 'Initial value';
 
   @ViewChild('article', {static: true}) article: ElementRef<HTMLElement>;
 
   onClick(){
     this.isEven = !this.isEven;
      console.log(this.article.nativeElement.dataset);
+  }
+
+  changeInputValue(){
+    this.inputValue = `Some value ${Math.random()}`;
   }
   
 }

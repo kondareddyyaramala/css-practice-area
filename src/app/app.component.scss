@@ -29,4 +29,22 @@ article {
   }
 }
 
+.empty-example{
+  input:not(:has(attr(value))) {
+    border: 1px solid red;
+  }
+
+  input:not(:empty){
+    border: 1px solid green;
+  }
+
+  input:read-only{
+    border: none;
+    &:focus{
+      border: none;
+      outline: none;
+    }
+  }
+}
+
 

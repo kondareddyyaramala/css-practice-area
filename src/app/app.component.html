@@ -1,24 +1,29 @@
 <article>
-
-<div>Name</div>
-
+	<div>Name</div>
 </article>
 
 <br>
 <div id="grid">
-  <div>Hello this is one</div>
-  <div>Hello this is two</div>
-  <div>Hello this is three</div>
+	<div>Hello this is one</div>
+	<div>Hello this is two</div>
+	<div>Hello this is three</div>
 </div>
 
 <h5>Demonstrating the practical use of data attributes</h5>
 <div class="">
 	<article #article [attr.data-even]="isEven"></article>
-  <button (click)="onClick()">Click to change color</button>
+	<button (click)="onClick()">Click to change color</button>
 </div>
+<br/>
 
 <fieldset>
-   <legend>Change This Name</legend>
+	<legend>Change This Name</legend>
 </fieldset>
+<br/>
 
-
+<!-- :empty example -->
+<div class="empty-example">
+	<input [attr.value]="inputValue" [attr.readOnly]="true"/>
+  <button (click)="changeInputValue()">Change value</button>
+</div>
+	<br/>
