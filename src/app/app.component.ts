@@ -9,6 +9,7 @@ export class AppComponent  {
   name = 'Angular';
   isEven = true;
   inputValue: string = 'Initial value';
+  text="This is sample text that needs to be displayed"
 
   @ViewChild('article', {static: true}) article: ElementRef<HTMLElement>;
 
